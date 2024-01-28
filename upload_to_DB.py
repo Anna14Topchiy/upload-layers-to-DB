@@ -6,11 +6,11 @@ from geoalchemy2 import Geometry, WKBElement
 from shapely import wkb
 
 # Replace these values with your database connection parameters
-DB_USER = "gis"
-DB_PASSWORD = "HV-GuzVEq8tX*c"
-DB_HOST = "34.107.108.225"
-DB_PORT = "5432"
-DB_NAME = "nl"
+DB_USER = "***"
+DB_PASSWORD = "*****"
+DB_HOST = "****"
+DB_PORT = "****"
+DB_NAME = "*****"
 
 def load_shapefiles_to_db(shapefile_path, table_name):
     # Create a connection string to the database
@@ -60,7 +60,7 @@ def load_shapefiles_to_db(shapefile_path, table_name):
 
 if __name__ == "__main__":
     # Replace these values with your Shapefile path and table name in the database
-    shapefile_path = r"C:\Users\annat\OneDrive\kasko\source_preparation_for_each_country\NL\scrip_snap_points_to_line\snapped_points\nl_traffic_lights.shp"
-    table_name = "nl_traffic_lights"
+    shapefile_path = r"******"
+    table_name = "******"
 
     load_shapefiles_to_db(shapefile_path, table_name)
